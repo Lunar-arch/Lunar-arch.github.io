@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+	<head> 
+		<meta charset="UTF-8"> 
+	
+		<script> 
+			function setLoggedIn() { 
+			sessionStorage.setItem('isLoggedIn1', 'true'); // Use 'isLoggedIn1' for the first login page 
+				
+			} 
+			function checkPswd() { 
+			var confirmPassword = "glittercheeks"; // Use 'password1' for the first login page 
+			var password = document.getElementById("pswd").value; 
+			if (password == confirmPassword) { 
+			setLoggedIn(); 
+			window.location.href = "bio-chat.html"; // Redirect to bio chat page 
+			} else { 
+			document.getElementById("error-message").innerText ="Incorrect password. Please try again."; 
+			document.getElementById("error-message").style.color = "red"; 
+			} 
+
+			return false; // Prevent default form submission 
+			} 
+
+		</script> 
+		<style> 
+			html, body { 
+			height: 100%; margin: 0; /* Remove default margin */ 
+			padding: 0; /* Remove default padding */ 
+			background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80'); background-repeat: no-repeat; 
+			background-size: cover; /* Cover the entire viewport */ 
+			background-position: center; /* Center the background image */ 
+			font-family: "Syne", sans-serif; 
+			} 
+ 
+			.container { 
+			width: 100%; 
+			padding-right: 15px; 
+			padding-left: 15px; 
+			margin-right: auto; 
+			margin-left: auto; 
+			} 
+
+			.image-container { 
+			text-align: center; 
+			width: 100%; 
+			} 
+
+			.links-container { 
+			display: flex; 
+			flex-direction: column; 
+			justify-content: center; 
+			align-items: center; 
+			gap: 20px; 
+			} 
+ 
+			.link { 
+			min-width: 50% !important; 
+			} 
+ 
+			@media (min-width: 1200px) { 
+			.container { 
+			max-width: 1140px; 
+			} 
+
+			} 
+			@media (min-width: 992px) { 
+			.container { 
+			max-width: 960px; 
+			} 
+				
+			} 
+			@media (min-width: 768px) { 
+			.container { 
+			max-width: 720px; 
+			} 
+ 
+			.link { 
+			width: 100%; 
+			}
+				
+			} 
+			@media (min-width: 576px) { 
+			.container { 
+			max-width: 540px; 
+			} 
+
+			} 
+ 
+			.w3-yellow, 
+			.w3-hover-purple:hover, 
+			.w3-text-black { 
+			color: rgba(255, 204, 217) !important; 
+			background-color: rgba(255, 255, 179, 0.3) !important; 
+			} 
+		</style> 
+	</head> 
+	
+	<body> 
+<span>
+	<br><br><br><br><br><br><br><br><br> 
+</span>
+		
+		<center> 
+			<form id="loginForm" onsubmit="return checkPswd();"> 
+				<input type="password" id="pswd"> 
+				<input type="submit" value="Submit"> 
+				<div id="error-message" class="error-message"></div> 
+			</form> 
+		</center> 
+		
+		<script> 
+			if (sessionStorage.getItem('isLoggedIn1')) { 
+			sessionStorage.removeItem('isLoggedIn1'); // Remove logged in status 
+			} 
+		</script> 
+	</body> 
+</html> 
