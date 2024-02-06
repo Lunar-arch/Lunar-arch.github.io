@@ -101,33 +101,33 @@
     </div>
 
     <script>
-        async function checkPswd(event) {
-            event.preventDefault(); // Prevent default form submission
-            const password = document.getElementById("password").value;
+      async function checkPswd(event) {
+    event.preventDefault(); // Prevent default form submission
+    const password = document.getElementById("password").value;
 
-            try {
-                const response = await fetch('https://lunar-pyro-student.github.io/validate-password', {
-                    method: 'POST',
-                    body: JSON.stringify({ password: password }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    window.location.href = "group-chat.html"; // Redirect on successful login
-                } else {
-                    document.getElementById("error-message").innerText = "Incorrect password. Please try again.";
-                    document.getElementById("error-message").style.color = "red";
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                document.getElementById("error-message").innerText = "Error validating password.";
-                document.getElementById("error-message").style.color = "red";
+    try {
+        const response = await fetch('https://lunar-pyro-student.github.io/validate-password', {
+            method: 'POST',
+            body: JSON.stringify({ password: password }),
+            headers: {
+                'Content-Type': 'application/json'
             }
-        }
+        });
 
-        document.getElementById("loginForm").addEventListener("submit", checkPswd);
+        if (response.ok) {
+            window.location.href = "group-chat.html"; // Redirect on successful login
+        } else {
+            document.getElementById("error-message").innerText = "Incorrect password. Please try again.";
+            document.getElementById("error-message").style.color = "red";
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById("error-message").innerText = "Error validating password.";
+        document.getElementById("error-message").style.color = "red";
+    }
+}
+
+document.getElementById("loginForm").addEventListener("submit", checkPswd);
     </script>
 </body> 
 </html>
