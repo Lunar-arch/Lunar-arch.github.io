@@ -41,6 +41,7 @@ body {
 	}
 .menu-sidebar-content-header {
 	color: white;
+	text-decoration: none;
 	font: Roboto;
 	font-size: 20px 
 	padding: 7px;
