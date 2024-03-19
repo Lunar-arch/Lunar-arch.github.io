@@ -1,5 +1,5 @@
 # Upcoming updates
-Make sure to check this repository often for any changes i might have made. I make commits very often, so stay posted.
+Make sure to check this repository often for any changes I might have made. I make commits very often, so stay posted.
 
 # To-do List
 - BTD 1-4
