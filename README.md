@@ -1,6 +1,12 @@
 # Upcoming updates
 Make sure to check this repository often for any changes I might have made. I make commits very often, so stay posted.
 
+# Unfinished Games
+Games marked with " - " are  unfinished, and will not work
+
+# 1v1.lol WILL NOT WORK ON SCHOOL CHROMEBOOK
+We are trying our best to fix this issue.
+
 # To-do List
 - BTD 1-4
 - Yoshis Island and SMB 2
