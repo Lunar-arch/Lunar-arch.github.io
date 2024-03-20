@@ -5,6 +5,8 @@ Make sure to check this repository often for any changes I might have made. I ma
 - BTD 1-4
 - Yoshis Island and SMB 2
 - OG Duck Life
+- Papa Louie 2: When Burgers Attack
+- Papa Luie 3: When Sundaes Attack
   
 # Game Request Form
 If you would like to request a game, report a problem, or give feedback, complete the [Game Request Form](https://forms.gle/uicJnrD2XpBhEM9Y8) 
