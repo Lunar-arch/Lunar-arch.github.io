@@ -62,6 +62,41 @@ body {
 .menu-sidebar:hover .menu-sidebar-content-header {
 	opacity: 1;
 }
+.menu-button {
+    position: absolute;
+	height: 25px;
+	top: 0px;
+	right: 0px;
+    background-color: #240c3c;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+	z-index: 100;
+	border-bottom-left-radius: 10px;
+	
+        }
+.tabs-text {
+	color: white;
+	text-decoration: none; 
+}
+        /* Styling for the hidden menu content */
+        #menu {
+            display: none;
+            position: absolute;
+            top: 25px;
+            right: 0px;
+            background-color: #240c3c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+			z-index: 100;
+        }
+
+        /* Show the menu when the button is clicked */
+        #menu.active {
+            display: block;
+        }
 .card {
 	margin-right: 20px;
 	margin-left: 20px;
