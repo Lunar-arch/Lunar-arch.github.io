@@ -252,6 +252,14 @@ border-top-right-radius: 15px;
 	height: 75%;
 	background-image: url('https://th.bing.com/th/id/OIP.5E_DjTGs6vi2VB98A6obQAAAAA?w=203&h=145&c=7&r=0&o=5&pid=1.7')
 }
+.lol1v1-image {
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-size: cover;
+	width: 100%;
+	height: 75%;
+	background-image: url('https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co');
+}
 h1 {
 		font-size: 200%;
 		color: #F1F1F1;
