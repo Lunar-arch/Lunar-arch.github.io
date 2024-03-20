@@ -24,18 +24,19 @@
 		  </section>
 	  </div>
   </header>
-	
 	<main id="#content" class="site-main" role="main">
+        <a href="#menu" class="menu-button" id="menu-button">Menu</a>
+        <!-- Menu content -->
+        <div id="menu">
+            <ul>
+                <li><a class="tabs-text" href="#">Dashboard</a></li>
+                <li><a class="tabs-text" href="#">Google Drive</a></li>
+                 <li><a class="tabs-text" href="#">Portal | Allen ISD Student Portal</a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
 		<section class="inner" style="margin-top: 5%;">
 			<div class="announcements"><div class="anouncements-text">Games marked with * are unavailible using the files. Games Marked With - are unfinished. 1v1.lol is unavailible at this moment.</div></div>
-			<button id="presetButton">Presets</button>
-    				<div id="presetMenu">
-      				  <ul>
-        			    <li><a class="preset-text" href="#" onclick="changeTab('preset1')">Preset 1</a></li>
-      				    <li><a class="preset-text" href="#" onclick="changeTab('preset2')">Preset 2</a></li>
-			            <!-- Add more presets as needed -->
-       				 </ul>
-    			</div>
 			<div class="row">
 				<a href='btd.html' class="card">
 					<div class="btd-image"></div>
@@ -94,6 +95,26 @@
 				$(this).toggleClass('active');
 			});
 		});
+		 const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+        		     function changeTitle(tabTitle) {
+        document.title = tabTitle;
+    }
+
+    document.getElementById('dashboard').onclick = function () {
+        changeTitle("Dashboard");
+    };
+    document.getElementById('drive').onclick = function () {
+        changeTitle("Google Drive");
+    };
+    document.getElementById('portal').onclick = function () {
+        changeTitle("Portal | Allen ISD Student Portal");
+    };
+    // Add similar lines for other tabs
 	</script>
 </body>
 </html>
