@@ -228,6 +228,30 @@ border-top-right-radius: 15px;
 	height: 75%;
 	background-image: url('https://tse3.mm.bing.net/th/id/OIP.DQR8fGyIQb4lWKeBYsmYGgHaHa?w=165&h=180&c=7&r=0&o=5&pid=1.7')
 }
+.fpa1-image {
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-size: cover;
+	width: 100%;
+	height: 75%;
+	background-image: url('https://th.bing.com/th/id/OIP.MkAqoR7EdH22Aw-gC3GwMwHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7')
+}
+.fpa2-image {
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-size: cover;
+	width: 100%;
+	height: 75%;
+	background-image: url('https://th.bing.com/th/id/OIP.YwPtZGeIvpBmItZV2WLxBwAAAA?w=187&h=110&c=7&r=0&o=5&pid=1.7')
+}
+.fpa3-image {
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-size: cover;
+	width: 100%;
+	height: 75%;
+	background-image: url('https://th.bing.com/th/id/OIP.5E_DjTGs6vi2VB98A6obQAAAAA?w=203&h=145&c=7&r=0&o=5&pid=1.7')
+}
 h1 {
 		font-size: 200%;
 		color: #F1F1F1;
