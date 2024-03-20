@@ -40,7 +40,7 @@ body {
 		z-index: 97;
 	}
  .anouncements {
-	 position: fixed;
+	 position: relative;
 	 left: 50%;
 	 right: 50%
 	 width: 100%;
