@@ -20,7 +20,7 @@ background-color: rgba(255, 255, 255, 0.1);
 z-index: -1;
 }
 body {
-	background: #eeeee1;
+	background: #190028;
 	z-index: -1;
 }	
 .menu-sidebar {
@@ -29,7 +29,7 @@ body {
 	left: 0;
 	width: 50px;
 	height: 100%;
-	background-color: #240c3c;
+	background-color: #3a015c;
 	transition: width 0.3s ease;
 	box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.4);
 	z-index: 1;
@@ -46,7 +46,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 50px;
-	background-color: #240c3c;
+	background-color: #3a015c;
 	z-index: 0;
  }
 .menu-sidebar-content-header {
@@ -67,7 +67,7 @@ body {
 	height: 25px;
 	top: 0px;
 	left: 0px;
-    background-color: #240c3c;
+    background-color: #3a015c;
     color: white;
     padding: 10px 10px;
     border: none;
@@ -86,7 +86,7 @@ body {
             position: absolute;
             top: 0px;
             left: 0px;
-            background-color: #240c3c;
+            background-color: #3a015c;
             color: white;
             padding: 30px;
             border-radius: 5px;
@@ -107,7 +107,7 @@ body {
 	width: 200px;
 	height: 275px;
 	border-radius: 15px;
-	background-color: #240c3c;
+	background-color: #3a015c;
 	transition: transform 0.2s;
 	z-index: 0;
 }
