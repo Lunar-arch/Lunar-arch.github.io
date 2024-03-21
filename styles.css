@@ -39,7 +39,7 @@ body {
 	width: 250px;
 	z-index: 97;
 }
- .anouncements {
+ .announcements {
 	position: fixed;
 	left: 50%;
 	right: 50%
@@ -49,6 +49,9 @@ body {
 	background-color: #3a015c;
 	z-index: 0;
  }
+.announcements-text {
+	color: white
+}
 .menu-sidebar-content-header {
 	color: white;
 	text-decoration: none;
