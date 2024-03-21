@@ -154,18 +154,6 @@ h2 {
 
 /* Dark Mode Button */
 
-.moon-button {
-    position: fixed;
-	top: 5px;
-	right: 5px;
-    width: 10px;
-    height: 10px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-	z-index: 100;
-}
-
 .moon-icon,
 .sun-icon {
     position: absolute;
@@ -191,6 +179,17 @@ h2 {
 
 .moon-button.active .sun-icon {
     transform: translate(-50%, -50%) scale(1);
+}
+#dark-mode {
+	position:fixed;
+	right: 10px;
+	top: 10px;
+	width: 10px;
+    height: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+	z-index: 100;
 }
 
 
