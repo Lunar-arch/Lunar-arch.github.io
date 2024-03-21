@@ -1,142 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-<title>Dashboard</title>
-<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAjBJREFUOE+d011IU2Ecx/Hv2Tk63Y7b0txKqYvpcEWhzQiiSA3tDYQoCIKQoAhKkLooJcK6irCugt4IuumNrroQSkJDw1BIqOxtvpRWzk1n6XQvZ2tnJxwkDG0XPtfP5/+H3/N7hJgS11jmETRNS481jUQsRvDzAGooTM7G9Ug5Muh0pMWamuBXRxeaqqKMe4l6vORWbkcZG8dauyc9jvmnGL1+B2NJMWZXKWooQjwYZLK1jYIjh9JgTWO6uxfRaABRJHtNIbosPeHhEQRJQvF4/4+1RIKh5svobVbyaqqQnY5krFHfJNPdPfzufL00VqJ/mPIHyBr8QqbFlNyU9W/z11EEUYfyY2xp3N7Rz8Mn3TQer0B61kp2sR1zeSlqOEJ8dg7/83YKDh9cjH0TMzScuUdn10fqT+ziWKkJfYaE4vUlU87buYPI95/Y9u9Lxaqa4MatNm7ebsNqNROYDXOt5SjV20qY6XtLfC6IZYuLDIt58Tu/6RumvuEurk126uqqaLn6lHKnjdOndiPb8hFEKaWLCyWZCYQ423Sfnp4BzjcdYKvDgu/lCyLvejFbZAr31rKysgZJzlkYkMTzDX3w6BUXLj7GWWTjZHUhDtWHcYWJiQ/vCQy6KWu6RH5FNYIopuJvIxPJkKJKjMa6zbjsJmS7g8x8G4FP/Qxdaca0oYyihnOIBmMqnvQHcLs9rF5loWhtLrpMPQhC8tJ8r0PDA6iRCHLJOsRsQype5o/kL20QDDoOw95AAAAAAElFTkSuQmCC">
-<link rel="stylesheet" href="styles.css">	
-</head>
-<body class="body">
-	<div class="menu-sidebar"><a  href="https://forms.gle/uicJnrD2XpBhEM9Y8" class="menu-sidebar-content-header">
-		Report a problem or request a game
-	</a></div>
-	<header id="parallax_main" class="collapsing-parallax">
-		<div id="nav-button" class="menu-trigger"></div>
-		<div id="toolbar_main" class="toolbar-collapsing-parallax">
-		  <section id="title_main" class="title-collapsing-parallax">
-			  <a class="avatar"></a>
-			  <div id="title_main" class=".title-collapsing-parallax">
-				  <div class="collapsing-purple-box"><h1>Dart Games</h1></div>
-			  </div>
-		  </section>
-	  </div>
-  </header>
-	<main id="#content" class="site-main" role="main">
-        <a class="menu-button" id="menu-button">Menu</a>
-        <!-- Menu content -->
-        <div id="menu">
-            <ul>
-                <li><a class="tabs-text" id="dashboard">Dashboard</a></li>
-                <li><a class="tabs-text" id="drive">Google Drive</a></li>
-                <li><a class="tabs-text" id="portal">Portal | Allen ISD Student Portal</a></li>
-                <!-- Add more menu items as needed -->
-            </ul>
-        </div>	
-		<button id="dark-mode" class="moon-button">
-        	<span class="moon-icon"></span>
-        	<span class="sun-icon"></span>
-    	</button>
-		<section class="inner" style="margin-top: 5%;">
-			<div class="row">
-				<a href='btd.html' class="card">
-					<div class="btd-image"></div>
-					<div class="card-text">Bloons Tower Defense</div>
-				</a>
-				<a href='mario.html' class="card">
-					<div class="mario-image"></div>
-					<div class="card-text">Mario</div>
-				</a>
-				<a href='duck-life.html' class="card">
-					<div class="duck-life-image"></div>
-					<div class="card-text">* Duck Life *</div>
-				</a>
-				<a href='fpa.html' class="card">
-					<div class="fpa1-image"></div>
-					<div class="card-text">* Fancy Pants Adventure *</div>
-				</a>
-				</a>
-				<a href='1v1.lol-main/1v1.lol-main/1v1.lol/index.htm' class="card">
-					<div class="lol1v1-image"></div>
-					<div class="card-text">* 1v1Lol *</div>
-				</a>
-			</div>
-		</section>
-	</main>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title>Dashboard</title>
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAjBJREFUOE+d011IU2Ecx/Hv2Tk63Y7b0txKqYvpcEWhzQiiSA3tDYQoCIKQoAhKkLooJcK6irCugt4IuumNrroQSkJDw1BIqOxtvpRWzk1n6XQvZ2tnJxwkDG0XPtfP5/+H3/N7hJgS11jmETRNS481jUQsRvDzAGooTM7G9Ug5Muh0pMWamuBXRxeaqqKMe4l6vORWbkcZG8dauyc9jvmnGL1+B2NJMWZXKWooQjwYZLK1jYIjh9JgTWO6uxfRaABRJHtNIbosPeHhEQRJQvF4/4+1RIKh5svobVbyaqqQnY5krFHfJNPdPfzufL00VqJ/mPIHyBr8QqbFlNyU9W/z11EEUYfyY2xp3N7Rz8Mn3TQer0B61kp2sR1zeSlqOEJ8dg7/83YKDh9cjH0TMzScuUdn10fqT+ziWKkJfYaE4vUlU87buYPI95/Y9u9Lxaqa4MatNm7ebsNqNROYDXOt5SjV20qY6XtLfC6IZYuLDIt58Tu/6RumvuEurk126uqqaLn6lHKnjdOndiPb8hFEKaWLCyWZCYQ423Sfnp4BzjcdYKvDgu/lCyLvejFbZAr31rKysgZJzlkYkMTzDX3w6BUXLj7GWWTjZHUhDtWHcYWJiQ/vCQy6KWu6RH5FNYIopuJvIxPJkKJKjMa6zbjsJmS7g8x8G4FP/Qxdaca0oYyihnOIBmMqnvQHcLs9rF5loWhtLrpMPQhC8tJ8r0PDA6iRCHLJOsRsQype5o/kL20QDDoOw95AAAAAAElFTkSuQmCC">
+		<link rel="stylesheet" href="styles.css">	
+	</head>
+	<body class="body">
+		<div class="menu-sidebar"><a  href="https://forms.gle/uicJnrD2XpBhEM9Y8" class="menu-sidebar-content-header">Report a problem or request a game</a></div>
+		<header id="parallax_main" class="collapsing-parallax">
+			<div id="nav-button" class="menu-trigger"></div>
+			<div id="toolbar_main" class="toolbar-collapsing-parallax">
+				<section id="title_main" class="title-collapsing-parallax">
+					<a class="avatar"></a>
+			  		<div id="title_main" class=".title-collapsing-parallax">
+						<div class="collapsing-purple-box"><h1>Dart Games</h1></div>
+			  		</div>
+				</section>
+	  		</div>
+		</header>
+		<main id="#content" class="site-main" role="main">
+        	<a class="menu-button" id="menu-button">Menu</a>
+        	<div id="menu">
+        		<ul>
+					<li><a class="tabs-text" id="dashboard">Dashboard</a></li>
+					<li><a class="tabs-text" id="drive">Google Drive</a></li>
+					<li><a class="tabs-text" id="portal">Portal | Allen ISD Student Portal</a></li>
+           		</ul>
+       		</div>	
+			<button id="dark-mode" class="moon-button">
+       			<span class="moon-icon"></span>
+       			<span class="sun-icon"></span>
+   			</button>
+			<section class="inner" style="margin-top: 5%;">
+				<div class="row">
+					<a href='btd.html' class="card">
+						<div class="btd-image"></div>
+						<div class="card-text">Bloons Tower Defense</div>
+					</a>
+					<a href='mario.html' class="card">
+						<div class="mario-image"></div>
+						<div class="card-text">Mario</div>
+					</a>
+					<a href='duck-life.html' class="card">
+						<div class="duck-life-image"></div>
+						<div class="card-text">* Duck Life *</div>
+					</a>
+					<a href='fpa.html' class="card">
+						<div class="fpa1-image"></div>
+						<div class="card-text">* Fancy Pants Adventure *</div>
+					</a>
+					<a href='1v1.lol-main/1v1.lol-main/1v1.lol/index.htm' class="card">
+						<div class="lol1v1-image"></div>
+						<div class="card-text">* 1v1Lol *</div>
+					</a>
+				</div>
+			</section>
+		</main>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(function() {
-			var $pMain = $("#parallax_main"),
-				$pToolbar = $pMain.find("#toolbar_main"),
-				$pTitle = $pToolbar.find("#title_main"),
-				$pNavTrigger = $pMain.find("#nav-button"),
-				alpha = 0,
-				scale = 1;
-
-			$(window).scroll(function() {
-				var st = $(this).scrollTop();
-				if (st <= 0) {
-					maxHeight = 350;
-				} else if (st > 350) {
-					alpha = 1;
-					maxHeight = 70;
-				} else {
-					alpha = 0.0 + 1.2 * st / 350;
-					scale = 1 - 0.20 * st / 350;
-					maxHeight = 350 - 280 * ((st - 0)) / 350;
-				}
-				$pToolbar.css("background", "rgba(33,14,61," + alpha + ")");
-				$pMain.css({
-					'max-height': maxHeight + "px"
-				});
-				$pTitle.css('transform', 'scale(' + scale + ')');
-			});
-
-			$pNavTrigger.click(function() {
-				$(this).toggleClass('active');
-			});
-		});
-		 const menuButton = document.getElementById('menu-button');
-        const menu = document.getElementById('menu');
-
-        menuButton.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-function changeTitle(title, favicon) {
-	document.title = title;
-	document.getElementById('favicon').href = favicon;
-    }
-
-    document.getElementById('dashboard').onclick = function () {
-        changeTitleAndFavicon("Dashboard", "dashboard.png");
-    };
-    document.getElementById('drive').onclick = function () {
-        changeTitle("Google Drive", "drive.png");
-    };
-    document.getElementById('portal').onclick = function () {
-        changeTitle("Portal | Allen ISD Student Portal", "portal.png");
-    };
-// script.js
-const moonButton = document.getElementById('dark-mode');
-const bodyElements = document.getElementsByClassName('body'); // Assuming you have elements with class "body"
-
-let isDarkMode = false; // Initialize the dark mode state
-
-moonButton.addEventListener('click', function() {
-    // Toggle the dark mode state
-    isDarkMode = !isDarkMode;
-
-    // Change the color of each menu element
-    for (let i = 0; i < bodyElements.length; i++) {
-        bodyElements[i].style.backgroundColor = isDarkMode ? '#eeeeee' : '#000000'; // Change to your desired background colors
-    }
-
-    // Toggle the moon and sun icons
-    const moonIcon = document.querySelector('.moon-icon');
-    const sunIcon = document.querySelector('.sun-icon');
-    moonIcon.style.display = isDarkMode ? 'block' : 'none';
-    sunIcon.style.display = isDarkMode ? 'none' : 'block';
-});</body>
+		<script src="page-essentials.js"></script>
+	</body>
 </html>
