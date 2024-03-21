@@ -66,14 +66,14 @@ body {
     position: absolute;
 	height: 25px;
 	top: 0px;
-	right: 0px;
+	left: 0px;
     background-color: #240c3c;
     color: white;
     padding: 10px 10px;
     border: none;
     cursor: pointer;
 	z-index: 100;
-	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	
         }
 .tabs-text {
@@ -85,7 +85,7 @@ body {
             display: none;
             position: absolute;
             top: 25px;
-            right: 0px;
+            left: 0px;
             background-color: #240c3c;
             color: white;
             padding: 10px;
