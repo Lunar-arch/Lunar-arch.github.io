@@ -54,26 +54,4 @@ document.getElementById('portal').onclick = function () {
 };
 
 // Additional JavaScript
-const moonButton = document.getElementById('dark-mode');
-const bodyElements = document.getElementsByClassName('body'); // Assuming you have elements with class "body"
-
-let isDarkMode = false; // Initialize the dark mode state
-
-moonButton.addEventListener('click', function() {
-    // Toggle the dark mode state
-    isDarkMode = !isDarkMode;
-
-    // Change the color of each menu element
-    for (let i = 0; i < bodyElements.length; i++) {
-        bodyElements[i].style.backgroundColor = isDarkMode ? '#eeeeee' : '#000000'; // Change to your desired background colors
-    }
-
-    // Toggle the moon and sun icons
-    const moonIcon = document.querySelector('.moon-icon');
-    const sunIcon = document.querySelector('.sun-icon');
-    moonIcon.style.display = isDarkMode ? 'block' : 'none';
-    sunIcon.style.display = isDarkMode ? 'none' : 'block';
-
-    // Ensure the dark mode button remains visible
-    moonButton.style.display = 'block';
-});
+const moonButton = document.getElementById('dark-mode'); const moonIcon = document.querySelector('.moon-icon'); const sunIcon = document.querySelector('.sun-icon'); let isDarkMode = false; // Initialize the dark mode state moonButton.addEventListener('click', function() { // Toggle the dark mode state isDarkMode = !isDarkMode; // Change the color of each menu element (example color change) document.body.style.backgroundColor = isDarkMode ? '#222' : '#fff'; // Change to your desired background colors // Toggle the moon and sun icons moonIcon.style.display = isDarkMode ? 'none' : 'block'; sunIcon.style.display = isDarkMode ? 'block' : 'none'; // Ensure the dark mode button remains visible moonButton.style.display = 'block'; });
