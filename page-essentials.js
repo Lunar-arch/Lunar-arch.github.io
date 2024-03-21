@@ -52,6 +52,17 @@ document.getElementById('drive').onclick = function () {
 document.getElementById('portal').onclick = function () {
 	changeTitle("Portal | Allen ISD Student Portal", "portal.png");
 };
-
+document.addEventListener('keydown', function(event) {
+  if (event.key === '`') { // Check if the pressed key is the tilde key
+    window.open('https://www.example.com', '_blank');
 // Additional JavaScript
-const moonButton = document.getElementById('dark-mode'); const moonIcon = document.querySelector('.moon-icon'); const sunIcon = document.querySelector('.sun-icon'); let isDarkMode = false; // Initialize the dark mode state moonButton.addEventListener('click', function() { // Toggle the dark mode state isDarkMode = !isDarkMode; // Change the color of each menu element (example color change) document.body.style.backgroundColor = isDarkMode ? '#222' : '#fff'; // Change to your desired background colors // Toggle the moon and sun icons moonIcon.style.display = isDarkMode ? 'none' : 'block'; sunIcon.style.display = isDarkMode ? 'block' : 'none'; // Ensure the dark mode button remains visible moonButton.style.display = 'block'; });
+const moonButton = document.getElementById('dark-mode'); 
+const moonIcon = document.querySelector('.moon-icon'); 
+const sunIcon = document.querySelector('.sun-icon'); 
+let isDarkMode = false; // Initialize the dark mode state 
+moonButton.addEventListener('click', function() { // Toggle the dark mode state 
+	isDarkMode = !isDarkMode; // Change the color of each menu element (example color change) 
+	document.body.style.backgroundColor = isDarkMode ? '#222' : '#fff'; // Change to your desired background colors 
+	// Toggle the moon and sun icons 
+	moonIcon.style.display = isDarkMode ? 'none' : 'block'; sunIcon.style.display = isDarkMode ? 'block' : 'none'; // Ensure the dark mode button remains visible 
+	moonButton.style.display = 'block'; });
