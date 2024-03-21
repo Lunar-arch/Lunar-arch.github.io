@@ -9,7 +9,7 @@
 <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAjBJREFUOE+d011IU2Ecx/Hv2Tk63Y7b0txKqYvpcEWhzQiiSA3tDYQoCIKQoAhKkLooJcK6irCugt4IuumNrroQSkJDw1BIqOxtvpRWzk1n6XQvZ2tnJxwkDG0XPtfP5/+H3/N7hJgS11jmETRNS481jUQsRvDzAGooTM7G9Ug5Muh0pMWamuBXRxeaqqKMe4l6vORWbkcZG8dauyc9jvmnGL1+B2NJMWZXKWooQjwYZLK1jYIjh9JgTWO6uxfRaABRJHtNIbosPeHhEQRJQvF4/4+1RIKh5svobVbyaqqQnY5krFHfJNPdPfzufL00VqJ/mPIHyBr8QqbFlNyU9W/z11EEUYfyY2xp3N7Rz8Mn3TQer0B61kp2sR1zeSlqOEJ8dg7/83YKDh9cjH0TMzScuUdn10fqT+ziWKkJfYaE4vUlU87buYPI95/Y9u9Lxaqa4MatNm7ebsNqNROYDXOt5SjV20qY6XtLfC6IZYuLDIt58Tu/6RumvuEurk126uqqaLn6lHKnjdOndiPb8hFEKaWLCyWZCYQ423Sfnp4BzjcdYKvDgu/lCyLvejFbZAr31rKysgZJzlkYkMTzDX3w6BUXLj7GWWTjZHUhDtWHcYWJiQ/vCQy6KWu6RH5FNYIopuJvIxPJkKJKjMa6zbjsJmS7g8x8G4FP/Qxdaca0oYyihnOIBmMqnvQHcLs9rF5loWhtLrpMPQhC8tJ8r0PDA6iRCHLJOsRsQype5o/kL20QDDoOw95AAAAAAElFTkSuQmCC">
 <link rel="stylesheet" href="styles.css">	
 </head>
-<body>
+<body class="body">
 	<div class="menu-sidebar"><a  href="https://forms.gle/uicJnrD2XpBhEM9Y8" class="menu-sidebar-content-header">
 		Report a problem or request a game
 	</a></div>
@@ -34,7 +34,11 @@
                 <li><a class="tabs-text" id="portal">Portal | Allen ISD Student Portal</a></li>
                 <!-- Add more menu items as needed -->
             </ul>
-        </div>
+        </div>	
+		<button id="dark-mode" class="moon-button">
+        	<span class="moon-icon"></span>
+        	<span class="sun-icon"></span>
+    	</button>
 		<section class="inner" style="margin-top: 5%;">
 			<div class="announcements"><div class="anouncements-text">Games marked with * are unavailible using the files. Games Marked With - are unfinished. 1v1.lol is unavailible at this moment.</div></div><br><br>
 			<div class="row">
@@ -115,7 +119,18 @@ function changeTitle(title, favicon) {
     document.getElementById('portal').onclick = function () {
         changeTitle("Portal | Allen ISD Student Portal", "portal.png");
     };
-    // Add similar lines for other tabs
+  	const moonButton = document.getElementById('dark-mode');
+const bodyElements = document.getElementsByClassName('body'); // Assuming you have elements with class "body"
+
+moonButton.addEventListener('click', function() {
+    // Toggle the active class
+    moonButton.classList.toggle('active');
+
+    // Change the color of each menu element
+    for (let i = 0; i < bodyElements.length; i++) {
+        bodyElements[i].style.backgroundColor = '#eeeee1'; // Change to your desired background color
+    }
+});
 	</script>
 </body>
 </html>
