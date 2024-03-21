@@ -1,5 +1,5 @@
 # Upcoming updates
-Make sure to check this repository often for any changes I might have made. I make commits very often, so stay posted.
+Make sure to check this repository often for any changes we might have made. We make commits very often, so stay posted.
 
 # Unfinished Games
 Games marked with " - " are  unfinished, and will not work
