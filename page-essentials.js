@@ -73,4 +73,7 @@ moonButton.addEventListener('click', function() {
     const sunIcon = document.querySelector('.sun-icon');
     moonIcon.style.display = isDarkMode ? 'block' : 'none';
     sunIcon.style.display = isDarkMode ? 'none' : 'block';
+
+    // Ensure the dark mode button remains visible
+    moonButton.style.display = 'block';
 });
