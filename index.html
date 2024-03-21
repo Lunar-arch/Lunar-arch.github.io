@@ -118,18 +118,25 @@ function changeTitle(title, favicon) {
     document.getElementById('portal').onclick = function () {
         changeTitle("Portal | Allen ISD Student Portal", "portal.png");
     };
-  	const moonButton = document.getElementById('dark-mode');
+// script.js
+const moonButton = document.getElementById('dark-mode');
 const bodyElements = document.getElementsByClassName('body'); // Assuming you have elements with class "body"
 
+let isDarkMode = false; // Initialize the dark mode state
+
 moonButton.addEventListener('click', function() {
-    // Toggle the active class
-    moonButton.classList.toggle('active');
+    // Toggle the dark mode state
+    isDarkMode = !isDarkMode;
 
     // Change the color of each menu element
     for (let i = 0; i < bodyElements.length; i++) {
-        bodyElements[i].style.backgroundColor = '#eeeee1'; // Change to your desired background color
+        bodyElements[i].style.backgroundColor = isDarkMode ? '#eeeeee' : '#000000'; // Change to your desired background colors
     }
-});
-	</script>
-</body>
+
+    // Toggle the moon and sun icons
+    const moonIcon = document.querySelector('.moon-icon');
+    const sunIcon = document.querySelector('.sun-icon');
+    moonIcon.style.display = isDarkMode ? 'block' : 'none';
+    sunIcon.style.display = isDarkMode ? 'none' : 'block';
+});</body>
 </html>
