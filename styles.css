@@ -259,20 +259,24 @@ h2 {
 	text-decoration: none; 
 }
         
-        #menu {
-            display: none;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            background-color: #3a015c;
-            color: white;
-            padding: 30px;
-            border-radius: 5px;
-			z-index: 80;
-        }
-        #menu.active {
+#menu {
+	height: auto;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #3a015c;
+	color: white;
+	padding-top: 30px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	border-radius: 5px;
+	z-index: 80;
+}
+#menu.active {
             display: block;
-        }
+}
 
 
 /* Cards */
