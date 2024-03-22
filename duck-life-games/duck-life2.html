@@ -20,8 +20,22 @@
             }
         </style>
     </head>
-    <body class="body">
-        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <body class="body">
+	<div class="menu-sidebar">
+			<a  href="https://forms.gle/uicJnrD2XpBhEM9Y8" class="menu-sidebar-content-header">Report a problem or request a game</a>
+				<ul><li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="dashboard">Dashboard</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="drive">Google Drive</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="portal">Portal | Allen ISD Student Portal</a></li></ul>
+			
+		<a class="menu-sidebar-content-header">Click on a URL and then press the " ~ " key to open up the tab in an emergency</h1>
+			
+				<ul><li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="dashboard-url">Dashboard</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="drive-url">Google Drive</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="portal-url">Portal | Allen ISD Student Portal</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="gmail-url">Gmail</a></li>
+					<li class="menu-sidebar-content-header"><a class="menu-sidebar-content-header" id="docs-url">Google Docs</a></li></ul>
+		</div>
+	    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         <script>
             var swfobject = {};
 
@@ -32,22 +46,84 @@
                         height: height,
                         style: 'width: ' + width + 'px; height: ' + height + 'px',
                     });
-
                 player.load({ url: url });
-
-                window.addEventListener('resize', function() {
-                    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-                    var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
+			window.addEventListener('resize', function() {
+				var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
                     player.width = screenWidth;
                     player.height = screenHeight;
                     player.style = 'width: ' + screenWidth + 'px; height: ' + screenHeight + 'px';
                 });
             }
-
-            swfobject.embedSWF('https://Lunar-arch.github.io/duck-life-games/ducklife2.swf', 'ruffle', '100%', '100%');
+            swfobject.embedSWF('ducklife2.swf', 'ruffle', '100%', '100%');
         </script>
-       	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="page-essentials.js"></script>
+       	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		    // Script to handle setting the destination URL
+    let destinationUrl = ''; // Variable to store the destination URL
+
+    // Function to set the destination URL when a site is clicked
+    function setDestination(url) {
+        destinationUrl = url;
+        console.log(`Destination URL set to: ${destinationUrl}`);
+    }
+
+    // Event listeners for each site link to set the destination URL
+    document.getElementById('drive-url').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        setDestination('https://www.drive.google.com');
+    });
+
+    document.getElementById('gmail-url').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        setDestination('https://www.gmail.com');
+    });
+
+    document.getElementById('portal-url').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        setDestination('https://portal.allenisd.org/p/portal');
+    });
+
+    document.getElementById('dashboard-url').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        setDestination('https://allenisd.instructure.com');
+    });
+
+    document.getElementById('docs-url').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        setDestination('https://docs.google.com/document/u/0/?tgif=dm');
+    });
+
+    // Event listener for the tilde key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === '`' && destinationUrl !== '') {
+            window.open(destinationUrl, '_blank'); // Open the destination URL in a new tab
+        }
+    });
+
+    const menuButton = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    function changeTitle(title, favicon) {
+        document.title = title;
+        document.getElementById('favicon').href = favicon;
+    }
+
+    document.getElementById('dashboard').onclick = function() {
+        changeTitle("Dashboard", "dashboard.png");
+    };
+    document.getElementById('drive').onclick = function() {
+        changeTitle("Google Drive", "drive.png");
+    };
+    document.getElementById('portal').onclick = function() {
+        changeTitle("Portal | Allen ISD Student Portal", "portal.png");
+    };
+});
+	</script>
 	</body>
 </html>
