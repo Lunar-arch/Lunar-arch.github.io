@@ -1,4 +1,4 @@
-$(function() {
+ $(function() {
   var $pMain = $("#parallax_main"),
       $pToolbar = $pMain.find("#toolbar_main"),
       $pTitle = $pToolbar.find("#title_main"),
@@ -34,6 +34,7 @@ $(function() {
 		});
 		$pTitle.css('transform', 'scale(' + scale + ')');
 	});
+},)});
 
 	$pNavTrigger.click(function() {
 		$(this).toggleClass('active');
@@ -102,4 +103,3 @@ $(function() {
 	document.getElementById('portal').onclick = function() {
 		changeTitle("Portal | Allen ISD Student Portal", "portal.png");
 	};
-});
