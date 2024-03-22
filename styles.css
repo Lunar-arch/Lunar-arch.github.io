@@ -260,7 +260,7 @@ h2 {
 }
         
 #menu {
-	height: auto;
+	height: 300px;
 	display: none;
 	position: absolute;
 	top: 0px;
