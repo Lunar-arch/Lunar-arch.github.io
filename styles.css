@@ -122,7 +122,6 @@ applet,
 object,
 iframe,
 title,
-h1,
 h2,
 h3,
 h4,
@@ -138,7 +137,7 @@ p {
 	font-family: "Roboto";
 }
 h1 {
-		font-size: 100%;
+		font-size: 60%;
 		color: #F1F1F1;
 		font-family: Roboto;
 		font-style: bold;
