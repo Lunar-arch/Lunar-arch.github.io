@@ -151,47 +151,6 @@ h2 {
 	}
 
 
-/* Dark Mode Button */
-
-.moon-icon,
-.sun-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-color: #eeeeee; /* Monochromatic color */
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-	z-index: 100;
-}
-
-.sun-icon {
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.moon-button.active .moon-icon {
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.moon-button.active .sun-icon {
-    transform: translate(-50%, -50%) scale(1);
-}
-#dark-mode {
-	position:fixed;
-	right: 10px;
-	top: 10px;
-	width: 10px;
-    height: 10px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-	z-index: 100;
-}
-
-
 /* Sidebar */
 
 .menu-sidebar {
