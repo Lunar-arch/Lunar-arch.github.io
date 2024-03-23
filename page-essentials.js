@@ -52,17 +52,17 @@ $(function() {
 
     document.getElementById('portal-url').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        setDestination('https://www.google.com');
+        setDestination('https://portal.allenisd.org/p/portal');
     });
 
     document.getElementById('dashboard-url').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        setDestination('https://www.google.com');
+        setDestination('https://https://allenisd.instructure.com');
     });
 
     document.getElementById('docs-url').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        setDestination('https://www.google.com');
+        setDestination('https://docs.google.com/document/u/0/?tgif=d');
     });
 
     // Event listener for the tilde key
