@@ -5,49 +5,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 		<title>Dashboard</title>
 		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAjBJREFUOE+d011IU2Ecx/Hv2Tk63Y7b0txKqYvpcEWhzQiiSA3tDYQoCIKQoAhKkLooJcK6irCugt4IuumNrroQSkJDw1BIqOxtvpRWzk1n6XQvZ2tnJxwkDG0XPtfP5/+H3/N7hJgS11jmETRNS481jUQsRvDzAGooTM7G9Ug5Muh0pMWamuBXRxeaqqKMe4l6vORWbkcZG8dauyc9jvmnGL1+B2NJMWZXKWooQjwYZLK1jYIjh9JgTWO6uxfRaABRJHtNIbosPeHhEQRJQvF4/4+1RIKh5svobVbyaqqQnY5krFHfJNPdPfzufL00VqJ/mPIHyBr8QqbFlNyU9W/z11EEUYfyY2xp3N7Rz8Mn3TQer0B61kp2sR1zeSlqOEJ8dg7/83YKDh9cjH0TMzScuUdn10fqT+ziWKkJfYaE4vUlU87buYPI95/Y9u9Lxaqa4MatNm7ebsNqNROYDXOt5SjV20qY6XtLfC6IZYuLDIt58Tu/6RumvuEurk126uqqaLn6lHKnjdOndiPb8hFEKaWLCyWZCYQ423Sfnp4BzjcdYKvDgu/lCyLvejFbZAr31rKysgZJzlkYkMTzDX3w6BUXLj7GWWTjZHUhDtWHcYWJiQ/vCQy6KWu6RH5FNYIopuJvIxPJkKJKjMa6zbjsJmS7g8x8G4FP/Qxdaca0oYyihnOIBmMqnvQHcLs9rF5loWhtLrpMPQhC8tJ8r0PDA6iRCHLJOsRsQype5o/kL20QDDoOw95AAAAAAElFTkSuQmCC">
-		<link rel="stylesheet" href="../styles.css">
-        <style>
-            body, html {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-            #ruffle {
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-    <body class="body">
-        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-        <script>
-            var swfobject = {};
-
-            swfobject.embedSWF = function(url, cont, width, height){
-                var ruffle = window.RufflePlayer.newest(),
-                    player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-                        width: width,
-                        height: height,
-                        style: 'width: ' + width + 'px; height: ' + height + 'px',
-                    });
-
-                player.load({ url: url });
-
-                window.addEventListener('resize', function() {
-                    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-                    var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-                    player.width = screenWidth;
-                    player.height = screenHeight;
-                    player.style = 'width: ' + screenWidth + 'px; height: ' + screenHeight + 'px';
-                });
-            }
-
-            swfobject.embedSWF('https://Lunar-arch.github.io/duck-life-games/fpa2.swf', 'ruffle', '100%', '100%');
-        </script>
-       	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="page-essentials.js"></script>
-	</body>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #ruffle {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            width: 80%; /* Adjust the width to 80% */
+            height: 100%; /* Set the height to 100% */
+        }
+    </style>
+</head>
+<body class="body">
+    <div id='ruffle'></div>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        var swfobject = {};
+        swfobject.embedSWF = function(url, cont, width, height) {
+            var ruffle = window.RufflePlayer.newest();
+            var player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                width: width,
+                height: height,
+                style: 'width: ' + width + '; height: ' + height + ';', // Adjust the style here
+            });
+            player.load({ url: url });
+            window.addEventListener('resize', function() {
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                player.width = screenWidth;
+                player.height = screenHeight;
+                player.style = 'width: ' + screenWidth + '; height: ' + screenHeight + ';'; // Adjust the style here
+            });
+        };
+        swfobject.embedSWF('https://Lunar-arch.github.io/fpa-games/fpa2.swf', 'ruffle', '100%', '100%'); // Set the height to 100%
+    </script>
+</body>
 </html>
