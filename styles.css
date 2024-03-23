@@ -172,19 +172,35 @@ h2 {
 .menu-sidebar:hover .menu-sidebar-content-header {
 	opacity: 1;
 }
+
+
 /* Only index.html */
 
 }
- .anouncements {
+ .index-info {
 	position: fixed;
 	left: 50%;
-	right: 50%
-	top: 0;
+	right: 50%;
+	height: 70px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 100%;
 	height: 50px;
 	background-color: #3a015c;
-	z-index: 0;
+	z-index: 1;
  }
+.index-info-text {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	font: Roboto;
+	font-size: 20;
+}
 .menu-sidebar-content-header {
 	color: white;
 	text-decoration: none;
@@ -258,7 +274,6 @@ h2 {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .card-text {
-	
 	padding: 10px;
 	text-decoration: none;
 	color: white;
@@ -267,7 +282,6 @@ h2 {
 	box-sizing: border-box;
 	font: Roboto;
 	font-size: 15;
-	
 }
 
 
