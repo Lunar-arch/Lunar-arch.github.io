@@ -178,9 +178,7 @@ h2 {
 
 }
  .index-info {
-	position: fixed;
-	left: 50%;
-	right: 50%;
+	border-radius: 5px;
 	height: 70px;
 	margin-right: 50px;
 	margin-left: 50px;
