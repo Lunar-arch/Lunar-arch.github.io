@@ -71,26 +71,18 @@ $(function() {
             window.open(destinationUrl, '_blank'); // Open the destination URL in a new tab
         }
     });
-
-    const menuButton = document.getElementById('menu-button');
-    const menu = document.getElementById('menu');
-
-    menuButton.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
-
     function changeTitle(title, favicon) {
-        document.title = title;
-        document.getElementById('favicon').href = favicon;
-    }
+            document.title = title;
+            document.getElementById('favicon').href = favicon;
+        }
 
-    document.getElementById('dashboard').onclick = function() {
-        changeTitle("Dashboard", "dashboard.png");
-    };
-    document.getElementById('drive').onclick = function() {
-        changeTitle("Google Drive", "drive.png");
-    };
-    document.getElementById('portal').onclick = function() {
-        changeTitle("Portal | Allen ISD Student Portal", "portal.png");
-    };
+        document.getElementById('dashboard').onclick = function() {
+            changeTitle("Dashboard", "dashboard.png");
+        };
+        document.getElementById('drive').onclick = function() {
+            changeTitle("Google Drive", "drive.png");
+        };
+        document.getElementById('portal').onclick = function() {
+            changeTitle("Portal | Allen ISD Student Portal", "portal.png");
+        };
 });
