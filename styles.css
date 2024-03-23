@@ -176,28 +176,18 @@ h2 {
 
 /* Only index.html */
 
-}
- .index-info {
-	border-radius: 5px;
-	height: 70px;
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 100%;
-	height: 50px;
+
+.info-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #3a015c;
-	z-index: 1;
- }
-.index-info-text {
-	padding: 10px;
-	text-decoration: none;
+	height: 70px;
+	width: 600px;
 	color: white;
-	position: absolute;
-	width: 100%;
-	box-sizing: border-box;
-	font: Roboto;
-	font-size: 20;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 .menu-sidebar-content-header {
 	color: white;
