@@ -1,5 +1,5 @@
 # Updates
-Version 1.0.0 (The first stable version) is in its final testing stages. This is by far a primitive version of the site, but all the games that aren't labeled as unavailible should all be working perfectly. If you come across a problem fill out the [Feedback Form](https://forms.gle/uicJnrD2XpBhEM9Y8)
+Version 1.0.0 (The first stable version) is open! This is by far a primitive version of the site, but all the games that aren't labeled as unavailible should all be working perfectly. If you come across a problem fill out the [Feedback Form](https://forms.gle/uicJnrD2XpBhEM9Y8)
 
 # ZIP Instructions For Chromebook
 For many people, the site is blocked. To solve this issue, simply download the zip and open the index.html file.
